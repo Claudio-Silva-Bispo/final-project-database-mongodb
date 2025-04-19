@@ -2,6 +2,8 @@ from bson import ObjectId
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 import json
+from flask import send_file
+import io
 
 app = Flask(__name__)
 
@@ -95,6 +97,30 @@ def editar():
 
     return render_template('editar.html', doc=doc, collection=collection_name, id=doc_id, message=message)
 
+@app.route('/exportar', methods=['GET', 'POST'])
+def exportar_dataset():
+    message = ""
+    if request.method == 'POST':
+        collection_name = request.form['collection_exportar']
+        try:
+            dados = list(db[collection_name].find())
+            for doc in dados:
+                doc['_id'] = str(doc['_id'])  # Convertendo ObjectId para string
+
+            json_data = json.dumps(dados, indent=4, ensure_ascii=False)
+
+            # Cria um arquivo em memória
+            buffer = io.BytesIO()
+            buffer.write(json_data.encode('utf-8'))
+            buffer.seek(0)
+
+            filename = f'{collection_name}_export.json'
+            return send_file(buffer, as_attachment=True, download_name=filename, mimetype='application/json')
+
+        except Exception as e:
+            message = f"Erro ao exportar: {e}"
+
+    return render_template('exportar.html', message=message)
 
 if __name__ == '__main__':
     app.run(debug=True)
