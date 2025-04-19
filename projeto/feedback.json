@@ -1,0 +1,93 @@
+[
+    {
+      "feedback_id": "1",
+      "cliente_id": "1",
+      "clinica_id": "1",
+      "dentista_id": "1",
+      "nota": 5,
+      "comentario": "Excelente atendimento! Dentista só precisa ter mais atenção.",
+      "data_feedback": "2025-04-10"
+    },
+    {
+      "feedback_id": "2",
+      "cliente_id": "2",
+      "clinica_id": "2",
+      "dentista_id": "2",
+      "nota": 4,
+      "comentario": "Muito bom, mas poderia melhorar o tempo de espera.",
+      "data_feedback": "2025-04-11"
+    },
+    {
+      "feedback_id": "3",
+      "cliente_id": "3",
+      "clinica_id": "3",
+      "dentista_id": "3",
+      "nota": 3,
+      "comentario": "Consulta razoável, esperava mais atenção.",
+      "data_feedback": "2025-04-12"
+    },
+    {
+      "feedback_id": "4",
+      "cliente_id": "4",
+      "clinica_id": "4",
+      "dentista_id": "4",
+      "nota": 5,
+      "comentario": "Profissional excelente, atendimento impecável.",
+      "data_feedback": "2025-04-13"
+    },
+    {
+      "feedback_id": "5",
+      "cliente_id": "5",
+      "clinica_id": "5",
+      "dentista_id": "5",
+      "nota": 2,
+      "comentario": "Clínica estava desorganizada no dia da consulta.",
+      "data_feedback": "2025-04-14"
+    },
+    {
+      "feedback_id": "6",
+      "cliente_id": "6",
+      "clinica_id": "6",
+      "dentista_id": "6",
+      "nota": 4,
+      "comentario": "Bom atendimento, dentista foi cordial e eficiente.",
+      "data_feedback": "2025-04-15"
+    },
+    {
+      "feedback_id": "7",
+      "cliente_id": "7",
+      "clinica_id": "7",
+      "dentista_id": "7",
+      "nota": 1,
+      "comentario": "Não gostei do atendimento, fui mal atendido.",
+      "data_feedback": "2025-04-16"
+    },
+    {
+      "feedback_id": "8",
+      "cliente_id": "8",
+      "clinica_id": "8",
+      "dentista_id": "8",
+      "nota": 5,
+      "comentario": "Tudo perfeito, atendimento e estrutura nota 10!",
+      "data_feedback": "2025-04-17"
+    },
+    {
+      "feedback_id": "9",
+      "cliente_id": "9",
+      "clinica_id": "9",
+      "dentista_id": "9",
+      "nota": 3,
+      "comentario": "Dentista bom, mas a recepção foi um pouco confusa.",
+      "data_feedback": "2025-04-18"
+    },
+    {
+      "feedback_id": "10",
+      "cliente_id": "10",
+      "clinica_id": "10",
+      "dentista_id": "10",
+      "nota": 4,
+      "comentario": "Fui bem atendido, mas o agendamento atrasou um pouco.",
+      "data_feedback": "2025-04-19"
+    }
+  ]
+  

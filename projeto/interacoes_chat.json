@@ -1,0 +1,83 @@
+[
+    {
+      "cliente_id": "1",
+      "mensagemUsuario": "Quais horários estão disponíveis?",
+      "respostaIA": "Você pode agendar para terça às 10h ou quarta às 16h.",
+      "dataHora": "2025-04-18T10:00:00",
+      "tipoInteracao": "pergunta",
+      "contextoRelacionado": "agendamento"
+    },
+    {
+      "cliente_id": "2",
+      "mensagemUsuario": "Quero atualizar meu endereço.",
+      "respostaIA": "Claro! Acesse a seção de perfil e edite seu endereço.",
+      "dataHora": "2025-04-18T11:30:00",
+      "tipoInteracao": "formulario",
+      "contextoRelacionado": "cadastro"
+    },
+    {
+      "cliente_id": "3",
+      "mensagemUsuario": "Recebi um atendimento excelente!",
+      "respostaIA": "Ficamos felizes com seu retorno! Deseja deixar um feedback formal?",
+      "dataHora": "2025-04-17T14:15:00",
+      "tipoInteracao": "recomendacao",
+      "contextoRelacionado": "feedback"
+    },
+    {
+      "cliente_id": "4",
+      "mensagemUsuario": "Como faço para cancelar uma consulta?",
+      "respostaIA": "Você pode cancelar acessando a área de agendamentos.",
+      "dataHora": "2025-04-16T09:45:00",
+      "tipoInteracao": "pergunta",
+      "contextoRelacionado": "agendamento"
+    },
+    {
+      "cliente_id": "5",
+      "mensagemUsuario": "Quero saber como funciona o programa de pontos.",
+      "respostaIA": "Você ganha pontos ao completar desafios como preencher seu cadastro.",
+      "dataHora": "2025-04-16T13:00:00",
+      "tipoInteracao": "pergunta",
+      "contextoRelacionado": "beneficios"
+    },
+    {
+      "cliente_id": "6",
+      "mensagemUsuario": "Preencher dados pessoais",
+      "respostaIA": "Vamos começar! Qual é o seu nome completo?",
+      "dataHora": "2025-04-15T08:30:00",
+      "tipoInteracao": "formulario",
+      "contextoRelacionado": "cadastro"
+    },
+    {
+      "cliente_id": "7",
+      "mensagemUsuario": "Estou com dor de dente, o que fazer?",
+      "respostaIA": "Agende uma consulta o quanto antes. Posso ajudar com isso.",
+      "dataHora": "2025-04-14T17:00:00",
+      "tipoInteracao": "recomendacao",
+      "contextoRelacionado": "sintomas"
+    },
+    {
+      "cliente_id": "8",
+      "mensagemUsuario": "Preciso remarcar meu atendimento.",
+      "respostaIA": "Certo! Qual data e horário você prefere?",
+      "dataHora": "2025-04-13T12:20:00",
+      "tipoInteracao": "pergunta",
+      "contextoRelacionado": "agendamento"
+    },
+    {
+      "cliente_id": "9",
+      "mensagemUsuario": "O atendimento atrasou, posso reclamar?",
+      "respostaIA": "Você pode registrar um feedback na área de histórico de consultas.",
+      "dataHora": "2025-04-13T14:10:00",
+      "tipoInteracao": "pergunta",
+      "contextoRelacionado": "feedback"
+    },
+    {
+      "cliente_id": "10",
+      "mensagemUsuario": "Me indique um especialista para canal.",
+      "respostaIA": "Temos especialistas em endodontia disponíveis na próxima semana.",
+      "dataHora": "2025-04-12T15:40:00",
+      "tipoInteracao": "recomendacao",
+      "contextoRelacionado": "especialidade"
+    }
+  ]
+  

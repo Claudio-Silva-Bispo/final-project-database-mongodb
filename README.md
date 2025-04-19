@@ -263,10 +263,10 @@ Permite gerar notas médias, análise de sentimentos e alimentar o sistema de IA
 
 ```bash
     {
-        "feedback_id": "fb_001",
-        "cliente_id": "cli_001",
-        "clinica_id": "cli_234",
-        "especialista_id": "esp_789",
+        "feedback_id": "1",
+        "cliente_id": "2",
+        "clinica_id": "1",
+        "dentista_id": "3",
         "nota": 5,
         "comentario": "Excelente atendimento! Dentista só precisa ter mais atenção.",
         "data_feedback": "2025-04-10"
@@ -289,11 +289,11 @@ Essa estrutura é a base para decisões preditivas, como:
 
 ```bash
     {
-      "resultado_id": "res_001",  
-      "agendamento_id": "ag_123",
-      "cliente_id": "cli_001",
-      "clinica_id": "cli_234",
-      "especialista_id": "esp_789",
+      "resultado_id": "1",  
+      "agendamento_id": "1",
+      "cliente_id": "2",
+      "clinica_id": "1",
+      "dentista_id": "3",
       "diagnostico": "Gengivite",
       "recomendacoes": "Uso de enxaguante bucal e retorno em 30 dias",
       "medicamentos_prescritos": ["Enxaguante bucal Clorexidina"],
@@ -313,7 +313,7 @@ Suporta o programa de relacionamento e gamificação, com tracking dos usuários
 
 ```bash
     {
-        "desafio_id": "ds_001",
+        "desafio_id": "1",
         "titulo": "Complete seu cadastro",
         "descricao": "Preencha todos os dados do perfil",
         "pontos": 20,
@@ -329,8 +329,8 @@ Armazena notificações direcionadas a cada usuário sobre agendamentos, feedbac
 
 ```bash
     {
-        idUsuario: "abc123",  
-        idAgendamento: "xyz789",               
+        cliente_id: "1",  
+        agendamento_id: "1",               
         tipo: "agendamento",                 
         titulo: "Confirmação de agendamento",
         mensagem: "Sua consulta está confirmada para o dia 24/04 às 14h.",
@@ -346,14 +346,14 @@ Armazena notificações direcionadas a cada usuário sobre agendamentos, feedbac
 Armazena interações do usuário com a inteligência artificial para análise e melhorias do sistema.
 
 ```bash
-  {
-    uidUsuario: "abc123",                
-    mensagemUsuario: "Quais horários estão disponíveis?",
-    respostaIA: "Você pode agendar para terça às 10h ou quarta às 16h.",
-    dataHora: Timestamp.now(),
-    tipoInteracao: "pergunta",            // 'pergunta' | 'formulario' | 'recomendacao' | 'outro'
-    contextoRelacionado: "agendamento"    // Ex: 'cadastro', 'feedback', etc. (opcional)
-  }
+    {
+        cliente_id: "abc123",                
+        mensagemUsuario: "Quais horários estão disponíveis?",
+        respostaIA: "Você pode agendar para terça às 10h ou quarta às 16h.",
+        dataHora: Timestamp.now(),
+        tipoInteracao: "pergunta",            // 'pergunta' | 'formulario' | 'recomendacao' | 'outro'
+        contextoRelacionado: "agendamento"    // Ex: 'cadastro', 'feedback', etc. (opcional)
+    }
 ```
 
 ## Criar 10 documentos para cada Coleção

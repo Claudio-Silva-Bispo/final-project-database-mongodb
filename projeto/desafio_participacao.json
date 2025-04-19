@@ -1,0 +1,73 @@
+[
+    {
+      "desafio_id": "1",
+      "titulo": "Complete seu cadastro",
+      "descricao": "Preencha todos os dados do perfil",
+      "pontos": 20,
+      "status": "concluido"
+    },
+    {
+      "desafio_id": "2",
+      "titulo": "Agende sua primeira consulta",
+      "descricao": "Realize o agendamento de uma consulta odontológica",
+      "pontos": 30,
+      "status": "concluido"
+    },
+    {
+      "desafio_id": "3",
+      "titulo": "Compareça à sua primeira consulta",
+      "descricao": "Compareça à clínica no dia e horário agendado",
+      "pontos": 50,
+      "status": "pendente"
+    },
+    {
+      "desafio_id": "4",
+      "titulo": "Avalie seu atendimento",
+      "descricao": "Deixe um feedback após a consulta",
+      "pontos": 15,
+      "status": "pendente"
+    },
+    {
+      "desafio_id": "5",
+      "titulo": "Responda à pesquisa de satisfação",
+      "descricao": "Ajude-nos a melhorar com seu feedback",
+      "pontos": 10,
+      "status": "concluido"
+    },
+    {
+      "desafio_id": "6",
+      "titulo": "Mantenha seus dados atualizados",
+      "descricao": "Atualize seu endereço e dados de contato",
+      "pontos": 10,
+      "status": "concluido"
+    },
+    {
+      "desafio_id": "7",
+      "titulo": "Agende uma segunda consulta",
+      "descricao": "Marque sua próxima visita à clínica",
+      "pontos": 25,
+      "status": "pendente"
+    },
+    {
+      "desafio_id": "8",
+      "titulo": "Não falte a uma consulta",
+      "descricao": "Compareça a todas as consultas agendadas no mês",
+      "pontos": 40,
+      "status": "pendente"
+    },
+    {
+      "desafio_id": "9",
+      "titulo": "Compartilhe o app com um amigo",
+      "descricao": "Indique nossa clínica para alguém",
+      "pontos": 20,
+      "status": "pendente"
+    },
+    {
+      "desafio_id": "10",
+      "titulo": "Participe de uma ação promocional",
+      "descricao": "Engaje-se em nossas campanhas e promoções",
+      "pontos": 30,
+      "status": "concluido"
+    }
+  ]
+  

@@ -1,0 +1,93 @@
+[
+    {
+      "cliente_id": "1",
+      "agendamento_id": "1",
+      "tipo": "agendamento",
+      "titulo": "Confirmação de agendamento",
+      "mensagem": "Sua consulta está confirmada para o dia 24/04 às 14h.",
+      "dataCriacao": "2025-04-18T10:00:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "2",
+      "agendamento_id": "2",
+      "tipo": "lembrete",
+      "titulo": "Lembrete de consulta",
+      "mensagem": "Não se esqueça da sua consulta amanhã às 09h.",
+      "dataCriacao": "2025-04-19T08:00:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "3",
+      "agendamento_id": "3",
+      "tipo": "feedback",
+      "titulo": "Avalie seu atendimento",
+      "mensagem": "Conte-nos como foi sua experiência após a consulta.",
+      "dataCriacao": "2025-04-17T14:30:00",
+      "lida": true
+    },
+    {
+      "cliente_id": "4",
+      "agendamento_id": "4",
+      "tipo": "cancelamento",
+      "titulo": "Consulta cancelada",
+      "mensagem": "Sua consulta foi cancelada pela clínica. Entre em contato.",
+      "dataCriacao": "2025-04-16T09:00:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "5",
+      "agendamento_id": "5",
+      "tipo": "remarcacao",
+      "titulo": "Consulta remarcada",
+      "mensagem": "Sua consulta foi remarcada para o dia 27/04 às 11h.",
+      "dataCriacao": "2025-04-18T15:45:00",
+      "lida": true
+    },
+    {
+      "cliente_id": "6",
+      "agendamento_id": "6",
+      "tipo": "mensagem",
+      "titulo": "Mensagem da clínica",
+      "mensagem": "Estamos com uma nova unidade mais próxima de você!",
+      "dataCriacao": "2025-04-17T10:15:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "7",
+      "agendamento_id": "7",
+      "tipo": "agendamento",
+      "titulo": "Confirmação de agendamento",
+      "mensagem": "Sua consulta está confirmada para o dia 28/04 às 16h.",
+      "dataCriacao": "2025-04-18T11:30:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "8",
+      "agendamento_id": "8",
+      "tipo": "lembrete",
+      "titulo": "Lembrete de consulta",
+      "mensagem": "Sua consulta é amanhã às 13h.",
+      "dataCriacao": "2025-04-19T07:00:00",
+      "lida": true
+    },
+    {
+      "cliente_id": "9",
+      "agendamento_id": "9",
+      "tipo": "feedback",
+      "titulo": "Ajude-nos a melhorar",
+      "mensagem": "Avalie o atendimento recebido nesta semana.",
+      "dataCriacao": "2025-04-15T17:45:00",
+      "lida": false
+    },
+    {
+      "cliente_id": "10",
+      "agendamento_id": "10",
+      "tipo": "mensagem",
+      "titulo": "Novidade para você",
+      "mensagem": "Ganhe pontos ao indicar um amigo para a clínica!",
+      "dataCriacao": "2025-04-14T12:00:00",
+      "lida": true
+    }
+  ]
+  
