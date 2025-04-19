@@ -8,13 +8,14 @@ app = Flask(__name__)
 # Conectar ao MongoDB
 client = MongoClient('mongodb+srv://csspclaudio:clnzEcsY8xmMVXMr@cluster0.kfgkjua.mongodb.net/')
 db = client['TestsDb']
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
+@app.route('/importar', methods=['GET', 'POST'])
+def importar():
     message = ""
-    data = []
     if request.method == 'POST':
-        # Quando for um POST (importação de arquivo)
         if 'json_file' in request.files:
             arquivo = request.files['json_file']
             try:
@@ -30,40 +31,70 @@ def index():
                 message = 'Arquivo importado com sucesso!'
             except Exception as e:
                 message = f'Erro ao importar o arquivo: {e}'
-        # Quando for um POST para consultar
-        elif 'collection_select' in request.form:
-            collection_name = request.form['collection_select']
-            collection = db[collection_name]
-            data = list(collection.find())  # Consultar todos os documentos na coleção
 
-    return render_template('index.html', message=message, data=data)
+    return render_template('importar.html', message=message)
 
-@app.route('/excluir', methods=['POST'])
-def excluir_por_formulario():
-    try:
-        collection = request.form['collection_excluir']
-        doc_id = request.form['id_excluir']
-        db[collection].delete_one({'_id': ObjectId(doc_id)})
-        message = "Documento excluído com sucesso!"
-    except Exception as e:
-        message = f"Erro ao excluir: {e}"
-    
-    # Retornar para a página inicial com a mensagem
-    return render_template('index.html', message=message, data=[])
 
-@app.route('/editar/<collection>/<id>', methods=['GET', 'POST'])
-def editar_documento(collection, id):
-    doc = db[collection].find_one({'_id': ObjectId(id)})
+@app.route('/consultar', methods=['GET', 'POST'])
+def consultar():
+    data = []
+    if request.method == 'POST':
+        collection_name = request.form['collection_select']
+        collection = db[collection_name]
+        data = list(collection.find())
+    return render_template('consultar.html', data=data)
+
+
+@app.route('/excluir', methods=['GET', 'POST'])
+def excluir():
+    message = ""
+    if request.method == 'POST':
+        try:
+            collection = request.form['collection_excluir']
+            doc_id = request.form['id_excluir']
+            db[collection].delete_one({'_id': ObjectId(doc_id)})
+            message = "Documento excluído com sucesso!"
+        except Exception as e:
+            message = f"Erro ao excluir: {e}"
+
+    return render_template('excluir.html', message=message)
+
+@app.route('/editar', methods=['GET', 'POST'])
+def editar():
+    doc = None
+    collection_name = ""
+    doc_id = ""
+    message = ""
 
     if request.method == 'POST':
-        novos_dados = request.form.to_dict()
-        try:
-            db[collection].update_one({'_id': ObjectId(id)}, {'$set': novos_dados})
-            return redirect(url_for('index'))
-        except Exception as e:
-            return f"Erro ao atualizar: {e}"
+        # Fase 1: Buscar dados
+        if 'buscar' in request.form:
+            collection_name = request.form['collection']
+            doc_id = request.form['id']
+            try:
+                doc = db[collection_name].find_one({'_id': ObjectId(doc_id)})
+                if not doc:
+                    message = "Documento não encontrado."
+            except Exception as e:
+                message = f"Erro ao buscar: {e}"
 
-    return render_template('editar.html', doc=doc, collection=collection)
+        # Fase 2: Salvar alterações
+        elif 'salvar' in request.form:
+            collection_name = request.form['collection']
+            doc_id = request.form['id']
+            novos_dados = request.form.to_dict()
+            novos_dados.pop('collection')
+            novos_dados.pop('id')
+            novos_dados.pop('salvar')
+
+            try:
+                db[collection_name].update_one({'_id': ObjectId(doc_id)}, {'$set': novos_dados})
+                message = "Documento atualizado com sucesso!"
+            except Exception as e:
+                message = f"Erro ao atualizar: {e}"
+
+    return render_template('editar.html', doc=doc, collection=collection_name, id=doc_id, message=message)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

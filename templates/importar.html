@@ -1,0 +1,16 @@
+<h2>Importar JSON</h2>
+<form method="POST" enctype="multipart/form-data">
+    <label for="collection">Coleção:</label>
+    <select name="collection" id="collection">
+        <option value="t_cliente">Cliente</option>
+        <!-- ... demais opções -->
+    </select><br><br>
+
+    <input type="file" name="json_file" accept=".json" required><br><br>
+    <button type="submit">Importar</button>
+</form>
+
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
+<a href="{{ url_for('home') }}">Voltar ao Início</a>

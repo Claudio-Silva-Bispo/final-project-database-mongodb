@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Documento</title>
+</head>
+<body>
+    <h2>Editar Documento</h2>
+
+    <form method="POST">
+        <label for="collection">Coleção:</label>
+        <select name="collection" id="collection" required>
+            <option value="t_cliente" {% if collection == 't_cliente' %}selected{% endif %}>Cliente</option>
+            <option value="t_clinica" {% if collection == 't_clinica' %}selected{% endif %}>Clínica</option>
+            <option value="t_consulta" {% if collection == 't_consulta' %}selected{% endif %}>Consulta</option>
+            <option value="t_dentista" {% if collection == 't_dentista' %}selected{% endif %}>Dentista</option>
+            <option value="t_feedback" {% if collection == 't_feedback' %}selected{% endif %}>Feedback</option>
+            <option value="t_sinistro" {% if collection == 't_sinistro' %}selected{% endif %}>Sinistro</option>
+            <option value="t_notificacao" {% if collection == 't_notificacao' %}selected{% endif %}>Notificação</option>
+        </select><br><br>
+
+        <label for="id">ID do Documento:</label>
+        <input type="text" name="id" id="id" value="{{ id }}" required>
+        <button type="submit" name="buscar">Buscar</button>
+    </form>
+
+    {% if doc %}
+        <hr>
+        <h3>Editando Documento</h3>
+        <form method="POST">
+            <input type="hidden" name="collection" value="{{ collection }}">
+            <input type="hidden" name="id" value="{{ id }}">
+            
+            {% for key, value in doc.items() %}
+                {% if key != "_id" %}
+                    <label>{{ key }}:</label><br>
+                    <input type="text" name="{{ key }}" value="{{ value }}"><br><br>
+                {% endif %}
+            {% endfor %}
+
+            <button type="submit" name="salvar">Salvar Alterações</button>
+        </form>
+    {% endif %}
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+
+    <br><a href="{{ url_for('home') }}">Voltar ao Início</a>
+</body>
+</html>

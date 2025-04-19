@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultar Coleção</title>
+</head>
+<body>
+    <h2>Consultar Documentos</h2>
+
+    <form method="POST">
+        <label for="collection_select">Selecione a coleção:</label>
+        <select name="collection_select" id="collection_select" required>
+            <option value="t_cliente">Cliente</option>
+            <option value="t_clinica">Clinica</option>
+            <option value="t_dentista">Dentista</option>
+            <option value="t_sugestao_clinica">Sugestão Clinica</option>
+            <option value="t_sugestao_cliente">Sugestão Cliente</option>
+            <option value="t_agendamento">Agendamento</option>
+            <option value="t_consulta">Consulta</option>
+            <option value="t_feedback">Feedback</option>
+            <option value="t_resultado_consulta">Resultado da Consulta</option>
+            <option value="t_notificacao">Notificação</option>
+            <option value="t_interacoes_chat">Interação com ChatBot</option>
+        </select>
+        <button type="submit">Consultar</button>
+    </form>
+
+    {% if data %}
+        <h3>Documentos Encontrados:</h3>
+        <ul>
+            {% for item in data %}
+                <li>
+                    <pre>{{ item }}</pre>
+                    
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}">Voltar ao Início</a>
+</body>
+</html>
