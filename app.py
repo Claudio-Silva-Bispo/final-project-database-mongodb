@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # Conectar ao MongoDB
-client = MongoClient('mongodb+srv://csspclaudio:clnzEcsY8xmMVXMr@cluster0.kfgkjua.mongodb.net/')
+client = MongoClient('')
 db = client['TestsDb']
 
 @app.route('/', methods=['GET', 'POST'])
