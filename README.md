@@ -362,3 +362,106 @@ Será criada a estrutura dos dados e os documentos serão inseridos via importa�
 
 Vamos elaborar um arquivo .json contendo 10 documentos, cada um com 10 atributos, simulando dados realistas. Isso servirá para testes e desenvolvimento. O modelo permitirá a importação dos arquivos .json diretamente na pasta do projeto. Após a importação, será possível consultar os dados enviados diretamente na interface.
 
+## Importação e Consulta de Dados JSON no MongoDB
+
+Este projeto foi desenvolvido utilizando Flask (para o backend) e MongoDB (como banco de dados), com o objetivo de permitir a importação de arquivos JSON para diferentes coleções do MongoDB e também a consulta desses dados diretamente por meio de uma interface web simples.
+
+# Funcionalidades
+
+**1. Importação de Arquivo JSON para MongoDB**
+
+O usuário pode selecionar um arquivo JSON e escolher a coleção do MongoDB onde deseja importar os dados.
+
+O arquivo JSON pode ser importado tanto para uma coleção única quanto para várias coleções, com base na estrutura do arquivo.
+
+Após selecionar o arquivo e a coleção desejada, basta clicar no botão "Importar", e os dados do arquivo JSON serão enviados e inseridos na coleção escolhida.
+
+O arquivo JSON deve estar em formato adequado para ser inserido no MongoDB (ou como um único documento ou como uma lista de documentos).
+
+**2. Consulta de Dados nas Coleções**
+
+O usuário pode escolher uma coleção específica do MongoDB e consultar todos os documentos presentes nela.
+
+Após selecionar a coleção desejada e clicar em "Consultar", todos os documentos presentes nessa coleção serão exibidos em uma tabela.
+
+A tabela exibe os campos de cada documento como cabeçalhos e os respectivos valores nas linhas abaixo, facilitando a visualização e análise dos dados.
+
+**Estrutura de Funcionamento**
+
+***Backend (Flask)***
+
+O backend foi desenvolvido utilizando o framework Flask, que gerencia as rotas e as interações com o banco de dados MongoDB.
+
+**Conexão com o MongoDB** 
+
+Utiliza o driver PyMongo para conectar ao banco de dados MongoDB e inserir ou consultar dados nas coleções.
+
+***Rotas***
+
+/ (Rota Principal): Exibe a interface para o usuário, permitindo tanto a importação de arquivos JSON quanto a consulta dos dados.
+
+**Método POST (Importação)** 
+
+Quando um arquivo JSON é enviado, os dados são carregados e inseridos na coleção escolhida.
+
+**Método POST (Consulta)** 
+
+Quando uma coleção é selecionada, os documentos dessa coleção são consultados e exibidos na interface.
+
+## Frontend (HTML):
+
+O frontend foi desenvolvido utilizando HTML simples, com formulários para a importação de arquivos JSON e a seleção de coleções para consulta.
+
+Seleção de Coleção para Importação: O usuário pode escolher entre várias coleções (como t_cliente, t_clinica, t_dentista, entre outras) para importar os dados JSON.
+
+Seleção de Coleção para Consulta: O usuário pode selecionar a coleção desejada e visualizar todos os documentos contidos nela em formato de tabela.
+
+**Exibição de Dados:** 
+
+A tabela é gerada dinamicamente, com os campos dos documentos sendo exibidos como cabeçalhos e os dados preenchendo as células.
+
+**Tecnologias Utilizadas**
+
+**Flask**
+
+Framework para criação de aplicativos web.
+
+**PyMongo** 
+
+Driver Python para interagir com o MongoDB.
+
+**MongoDB** 
+
+Banco de dados NoSQL utilizado para armazenar os dados.
+
+**HTML** 
+
+Para a criação da interface web.
+
+# Como Rodar o Projeto
+
+**Instalar Dependências** 
+
+Para rodar o projeto localmente, você precisará de um ambiente Python com as dependências necessárias instaladas. Execute o comando abaixo para instalar as dependências:
+
+```bash
+    pip install flask pymongo
+```
+
+**Executar o Servidor Flask** 
+
+Após instalar as dependências, execute o servidor Flask:
+
+```bash
+    python app.py
+```
+
+**Acessar a Interface Web** 
+
+Abra o navegador e acesse a interface em http://127.0.0.1:5000/ para importar arquivos JSON ou consultar dados nas coleções.
+
+## Observações
+
+O MongoDB está configurado para se conectar via MongoDB Atlas. Certifique-se de substituir o URL de conexão pelo seu próprio string de conexão do MongoDB, caso não esteja utilizando o MongoDB Atlas.
+
+O formato do arquivo JSON enviado deve estar correto para ser inserido nas coleções. Arquivos mal formatados podem resultar em erros durante o processo de importação.
