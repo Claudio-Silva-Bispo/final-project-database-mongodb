@@ -46,5 +46,30 @@ MongoDB possui drivers compatíveis com Java, C# e bibliotecas de IA, facilitand
 
 Ideal para armazenar dados de feedback, preferências personalizadas de usuários e registros de interação, que não seguem uma estrutura fixa e podem variar por usuário.
 
+# Modelo de Dados e Justificativas
+
+Abaixo está a modelagem dos principais documentos do sistema, estruturados de forma que aproveitem a flexibilidade do MongoDB. Cada coleção representa uma entidade essencial para o funcionamento do sistema:
+
+***🧑 Coleção: clientes***
+
+```bash
+  {
+  "cliente_id": "cli_001",
+  "nome": "João Silva",
+  "email": "joao@email.com",
+  "telefone": "11999999999",
+  "cpf": "12345678901",
+  "endereco_preferencia": {
+    "estado": "SP",
+    "cidade": "São Paulo",
+    "bairro": "Centro"
+  },
+  "dias_disponiveis": ["Segunda", "Quarta", "Sexta"],
+  "turno_disponivel": "Manhã",
+  "nivel_participacao": 4,
+  "pontos_acumulados": 150,
+  "ativo": true
+}
+```
 
 
