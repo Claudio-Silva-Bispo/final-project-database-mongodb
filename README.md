@@ -386,9 +386,9 @@ Após selecionar a coleção desejada e clicar em "Consultar", todos os document
 
 A tabela exibe os campos de cada documento como cabeçalhos e os respectivos valores nas linhas abaixo, facilitando a visualização e análise dos dados.
 
-**Estrutura de Funcionamento**
+# Estrutura de Funcionamento
 
-***Backend (Flask)***
+## Backend (Flask)
 
 O backend foi desenvolvido utilizando o framework Flask, que gerencia as rotas e as interações com o banco de dados MongoDB.
 
