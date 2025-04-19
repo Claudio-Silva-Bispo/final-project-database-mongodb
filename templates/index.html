@@ -50,6 +50,51 @@
         <button type="submit">Consultar</button>
     </form>
 
+    <h3>Gerenciar Dados</h3>
+    <form method="POST" action="/alterar">
+        <label for="id_alterar">ID do Documento para Alterar:</label>
+        <input type="text" name="id_alterar" id="id_alterar" required><br><br>
+
+        <label for="collection_alterar">Escolha a Coleção para Alterar:</label>
+        <select name="collection_alterar" id="collection_alterar" required>
+            <option value="t_cliente">Cliente</option>
+            <option value="t_clinica">Clinica</option>
+            <option value="t_dentista">Dentista</option>
+            <option value="t_sugestao_clinica">Sugestão Clinica</option>
+            <option value="t_sugestao_cliente">Sugestão Cliente</option>
+            <option value="t_agendamento">Agendamento</option>
+            <option value="t_consulta">Consulta</option>
+            <option value="t_feedback">Feedback</option>
+            <option value="t_resultado_consulta">Resultado da Consulta</option>
+            <option value="t_notificacao">Notificação</option>
+            <option value="t_interacoes_chat">Interação com ChatBot</option>
+        </select><br><br>
+
+        <button type="submit">Alterar</button>
+    </form>
+
+    <form method="POST" action="/excluir">
+        <label for="id_excluir">ID do Documento para Excluir:</label>
+        <input type="text" name="id_excluir" id="id_excluir" required><br><br>
+
+        <label for="collection_excluir">Escolha a Coleção para Excluir:</label>
+        <select name="collection_excluir" id="collection_excluir" required>
+            <option value="t_cliente">Cliente</option>
+            <option value="t_clinica">Clinica</option>
+            <option value="t_dentista">Dentista</option>
+            <option value="t_sugestao_clinica">Sugestão Clinica</option>
+            <option value="t_sugestao_cliente">Sugestão Cliente</option>
+            <option value="t_agendamento">Agendamento</option>
+            <option value="t_consulta">Consulta</option>
+            <option value="t_feedback">Feedback</option>
+            <option value="t_resultado_consulta">Resultado da Consulta</option>
+            <option value="t_notificacao">Notificação</option>
+            <option value="t_interacoes_chat">Interação com ChatBot</option>
+        </select><br><br>
+
+        <button type="submit">Excluir</button>
+    </form>
+
     {% if message %}
         <p>{{ message }}</p>
     {% endif %}
