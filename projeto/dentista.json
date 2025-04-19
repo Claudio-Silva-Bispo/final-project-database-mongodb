@@ -1,0 +1,162 @@
+[
+  {
+    "dentista_id": "1",
+    "nome": "Dra. Juliana Fernandes",
+    "especialidades_ids": ["1"], 
+    "crm": "SP-54321",
+    "email": "juliana.fernandes@clinicakids.com",
+    "telefone": "(11) 99999-1234",
+    "clinica_id": "cli_001",
+    "avaliacoes": 4.8,
+    "total_consultas": 215,
+    "disponibilidade": [
+      { "dia": 1, "turno": "Manhã" },  
+      { "dia": 3, "turno": "Tarde" }  
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "2",
+    "nome": "Dr. Marcos Silva",
+    "especialidades_ids": ["2"],  
+    "crm": "SP-12345",
+    "email": "marcos.silva@clinicabrace.com",
+    "telefone": "(11) 98888-5678",
+    "clinica_id": "cli_002",
+    "avaliacoes": 4.5,
+    "total_consultas": 150,
+    "disponibilidade": [
+      { "dia": 2, "turno": "Manhã" },  
+      { "dia": 6, "turno": "Tarde" }  
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "3",
+    "nome": "Dra. Laura Costa",
+    "especialidades_ids": ["3"],  
+    "crm": "SP-67890",
+    "email": "laura.costa@clinicadental.com",
+    "telefone": "(11) 97777-1234",
+    "clinica_id": "cli_003",
+    "avaliacoes": 4.7,
+    "total_consultas": 185,
+    "disponibilidade": [
+      { "dia": 1, "turno": "Tarde" },
+      { "dia": 3, "turno": "Manhã" } 
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "4",
+    "nome": "Dr. Paulo Oliveira",
+    "especialidades_ids": ["4"],  
+    "crm": "SP-23456",
+    "email": "paulo.oliveira@clinicasurgery.com",
+    "telefone": "(11) 96666-9876",
+    "clinica_id": "cli_004",
+    "avaliacoes": 4.9,
+    "total_consultas": 225,
+    "disponibilidade": [
+      { "dia": 2, "turno": "Manhã" },  
+      { "dia": 5, "turno": "Tarde" }   
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "5",
+    "nome": "Dra. Gabriela Martins",
+    "especialidades_ids": ["5"],  
+    "crm": "SP-11223",
+    "email": "gabriela.martins@clinicabeauty.com",
+    "telefone": "(11) 95555-2233",
+    "clinica_id": "cli_005",
+    "avaliacoes": 4.6,
+    "total_consultas": 190,
+    "disponibilidade": [
+      { "dia": 3, "turno": "Tarde" }, 
+      { "dia": 6, "turno": "Manhã" }   
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "6",
+    "nome": "Dr. Henrique Souza",
+    "especialidades_ids": ["6"],  
+    "crm": "SP-54322",
+    "email": "henrique.souza@clinicaimplantes.com",
+    "telefone": "(11) 97777-4321",
+    "clinica_id": "cli_006",
+    "avaliacoes": 4.7,
+    "total_consultas": 170,
+    "disponibilidade": [
+      { "dia": 1, "turno": "Manhã" },  
+      { "dia": 6, "turno": "Tarde" } 
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "7",
+    "nome": "Dra. Fernanda Ribeiro",
+    "especialidades_ids": ["2"], 
+    "crm": "SP-33211",
+    "email": "fernanda.ribeiro@clinicaalign.com",
+    "telefone": "(11) 95555-6677",
+    "clinica_id": "cli_007",
+    "avaliacoes": 4.4,
+    "total_consultas": 210,
+    "disponibilidade": [
+      { "dia": 1, "turno": "Tarde" },  
+      { "dia": 5, "turno": "Manhã" }  
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "8",
+    "nome": "Dr. Ricardo Lima",
+    "especialidades_ids": ["7"],  
+    "crm": "SP-66554",
+    "email": "ricardo.lima@clinicadent.com",
+    "telefone": "(11) 93333-4455",
+    "clinica_id": "cli_008",
+    "avaliacoes": 4.8,
+    "total_consultas": 230,
+    "disponibilidade": [
+      { "dia": 2, "turno": "Manhã" },  
+      { "dia": 6, "turno": "Tarde" }  
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "9",
+    "nome": "Dra. Luana Silva",
+    "especialidades_ids": ["3"],  
+    "crm": "SP-99887",
+    "email": "luana.silva@clinicadentalcare.com",
+    "telefone": "(11) 91111-2233",
+    "clinica_id": "cli_009",
+    "avaliacoes": 4.5,
+    "total_consultas": 180,
+    "disponibilidade": [
+      { "dia": 1, "turno": "Tarde" }, 
+      { "dia": 3, "turno": "Manhã" } 
+    ],
+    "ativo": true
+  },
+  {
+    "dentista_id": "10",
+    "nome": "Dr. Lucas Costa",
+    "especialidades_ids": ["4"],  
+    "crm": "SP-11234",
+    "email": "lucas.costa@clinicabucal.com",
+    "telefone": "(11) 94444-5566",
+    "clinica_id": "cli_010",
+    "avaliacoes": 4.9,
+    "total_consultas": 220,
+    "disponibilidade": [
+      { "dia": 2, "turno": "Manhã" }, 
+      { "dia": 6, "turno": "Tarde" }   
+    ],
+    "ativo": true
+  }
+]

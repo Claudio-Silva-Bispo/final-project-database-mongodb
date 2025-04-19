@@ -1,0 +1,123 @@
+[
+    {
+      "sugestao_clinica_id": "1",
+      "cliente_id": "1",
+      "clinica_id": "1",
+      "especialista_id": "1",
+      "especialidade_id": "1",
+      "data_sugerida": "2025-04-25",
+      "turno": "Manhã",
+      "motivo_sugestao": "Limpeza",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "2",
+      "cliente_id": "2",
+      "clinica_id": "2",
+      "especialista_id": "2",
+      "especialidade_id": "2",
+      "data_sugerida": "2025-04-26",
+      "turno": "Tarde",
+      "motivo_sugestao": "Clareamento dental",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "3",
+      "cliente_id": "3",
+      "clinica_id": "3",
+      "especialista_id": "3",
+      "especialidade_id": "3",
+      "data_sugerida": "2025-04-27",
+      "turno": "Manhã",
+      "motivo_sugestao": "Consultoria ortodôntica",
+      "status_clinica": "Confirmada",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "4",
+      "cliente_id": "4",
+      "clinica_id": "4",
+      "especialista_id": "4",
+      "especialidade_id": "4",
+      "data_sugerida": "2025-04-28",
+      "turno": "Noite",
+      "motivo_sugestao": "Exame radiológico",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "5",
+      "cliente_id": "5",
+      "clinica_id": "5",
+      "especialista_id": "5",
+      "especialidade_id": "5",
+      "data_sugerida": "2025-04-29",
+      "turno": "Tarde",
+      "motivo_sugestao": "Consulta de rotina",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "6",
+      "cliente_id": "6",
+      "clinica_id": "6",
+      "especialista_id": "6",
+      "especialidade_id": "6",
+      "data_sugerida": "2025-04-30",
+      "turno": "Manhã",
+      "motivo_sugestao": "Avaliação de implantes",
+      "status_clinica": "Confirmada",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "7",
+      "cliente_id": "7",
+      "clinica_id": "7",
+      "especialista_id": "7",
+      "especialidade_id": "7",
+      "data_sugerida": "2025-05-01",
+      "turno": "Tarde",
+      "motivo_sugestao": "Acompanhamento pós-cirúrgico",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "8",
+      "cliente_id": "8",
+      "clinica_id": "8",
+      "especialista_id": "8",
+      "especialidade_id": "8",
+      "data_sugerida": "2025-05-02",
+      "turno": "Noite",
+      "motivo_sugestao": "Revisão de tratamento ortodôntico",
+      "status_clinica": "Confirmada",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "9",
+      "cliente_id": "9",
+      "clinica_id": "9",
+      "especialista_id": "9",
+      "especialidade_id": "9",
+      "data_sugerida": "2025-05-03",
+      "turno": "Manhã",
+      "motivo_sugestao": "Tratamento de canal",
+      "status_clinica": "Pendente",
+      "data_envio": "2025-04-18"
+    },
+    {
+      "sugestao_clinica_id": "10",
+      "cliente_id": "10",
+      "clinica_id": "10",
+      "especialista_id": "10",
+      "especialidade_id": "10",
+      "data_sugerida": "2025-05-04",
+      "turno": "Tarde",
+      "motivo_sugestao": "Exame de rotina",
+      "status_clinica": "Confirmada",
+      "data_envio": "2025-04-18"
+    }
+  ]
+  

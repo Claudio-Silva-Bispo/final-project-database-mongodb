@@ -1,0 +1,242 @@
+[
+  {
+    "clinica_id": "1",
+    "nome": "Clínica OdontoMais",
+    "especialidade_id": ["1", "2"],
+    "cnpj": "1234567811000150",
+    "dias_disponiveis": ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["08:00", "14:00", "18:00"],
+    "localizacao": {
+      "estado": "SP",
+      "cidade": "Campinas",
+      "bairro": "Taquaral",
+      "cep": "05720333",
+      "rua": "Rua Teste, 20"
+    },
+    "avaliacao_media": 4.8,
+    "quantidade_feedbacks": 125,
+    "custo_medio": 90.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "1" },
+      { "dentista_id": "4" }
+    ]
+  },
+  {
+    "clinica_id": "2",
+    "nome": "Clínica Sorriso Feliz",
+    "especialidade_id": ["1", "3"],
+    "cnpj": "2345678921000225",
+    "dias_disponiveis": ["Segunda", "Quarta", "Sexta"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["09:00", "15:00", "18:00"],
+    "localizacao": {
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Itaim Bibi",
+      "cep": "04534000",
+      "rua": "Rua Paulista, 350"
+    },
+    "avaliacao_media": 4.5,
+    "quantidade_feedbacks": 85,
+    "custo_medio": 100.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "2" },
+      { "dentista_id": "5" }
+    ]
+  },
+  {
+    "clinica_id": "3",
+    "nome": "Clínica OdontoPremium",
+    "especialidade_id": ["2", "4"],
+    "cnpj": "3456789031000330",
+    "dias_disponiveis": ["Segunda", "Terça", "Quarta"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["08:00", "14:00"],
+    "localizacao": {
+      "estado": "MG",
+      "cidade": "Belo Horizonte",
+      "bairro": "Savassi",
+      "cep": "30123010",
+      "rua": "Rua Figueiredo, 100"
+    },
+    "avaliacao_media": 5.0,
+    "quantidade_feedbacks": 200,
+    "custo_medio": 150.00,
+    "parceira": false,
+    "dentistas": [
+      { "dentista_id": "3" },
+      { "dentista_id": "6" }
+    ]
+  },
+  {
+    "clinica_id": "4",
+    "nome": "Clínica DentCare",
+    "especialidade_id": ["1", "5"],
+    "cnpj": "4567890141000445",
+    "dias_disponiveis": ["Segunda", "Terça", "Sexta"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["07:30", "14:00", "17:30"],
+    "localizacao": {
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro",
+      "bairro": "Copacabana",
+      "cep": "22041001",
+      "rua": "Avenida Atlântica, 230"
+    },
+    "avaliacao_media": 4.2,
+    "quantidade_feedbacks": 95,
+    "custo_medio": 80.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "4" },
+      { "dentista_id": "7" }
+    ]
+  },
+  {
+    "clinica_id": "5",
+    "nome": "Clínica OdontoNova",
+    "especialidade_id": ["3", "4"],
+    "cnpj": "5678901251000550",
+    "dias_disponiveis": ["Segunda", "Quinta", "Sábado"],
+    "turno_disponivel": ["Manhã", "Noite"],
+    "horario_disponivel": ["09:00", "18:30", "21:00"],
+    "localizacao": {
+      "estado": "BA",
+      "cidade": "Salvador",
+      "bairro": "Barra",
+      "cep": "40130400",
+      "rua": "Rua da Barra, 450"
+    },
+    "avaliacao_media": 4.6,
+    "quantidade_feedbacks": 110,
+    "custo_medio": 120.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "5" },
+      { "dentista_id": "8" }
+    ]
+  },
+  {
+    "clinica_id": "6",
+    "nome": "Clínica DentalCare",
+    "especialidade_id": ["2", "5"],
+    "cnpj": "6789012361000665",
+    "dias_disponiveis": ["Terça", "Quarta", "Sexta"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["08:00", "14:30"],
+    "localizacao": {
+      "estado": "RS",
+      "cidade": "Porto Alegre",
+      "bairro": "Moinhos de Vento",
+      "cep": "90520180",
+      "rua": "Rua dos Andradas, 400"
+    },
+    "avaliacao_media": 4.7,
+    "quantidade_feedbacks": 130,
+    "custo_medio": 95.00,
+    "parceira": false,
+    "dentistas": [
+      { "dentista_id": "6" },
+      { "dentista_id": "9" }
+    ]
+  },
+  {
+    "clinica_id": "7",
+    "nome": "Clínica Sorriso de Ouro",
+    "especialidade_id": ["1", "3"],
+    "cnpj": "7890123471000770",
+    "dias_disponiveis": ["Segunda", "Quarta", "Sábado"],
+    "turno_disponivel": ["Tarde", "Noite"],
+    "horario_disponivel": ["12:00", "18:00"],
+    "localizacao": {
+      "estado": "ES",
+      "cidade": "Vitória",
+      "bairro": "Jardim da Penha",
+      "cep": "29055100",
+      "rua": "Avenida Vitória, 500"
+    },
+    "avaliacao_media": 4.4,
+    "quantidade_feedbacks": 105,
+    "custo_medio": 85.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "7" },
+      { "dentista_id": "10" }
+    ]
+  },
+  {
+    "clinica_id": "8",
+    "nome": "Clínica Família Sorriso",
+    "especialidade_id": ["2", "5"],
+    "cnpj": "8901234581000885",
+    "dias_disponiveis": ["Segunda", "Sexta", "Sábado"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["09:00", "15:00", "18:30"],
+    "localizacao": {
+      "estado": "PR",
+      "cidade": "Curitiba",
+      "bairro": "Batel",
+      "cep": "80420010",
+      "rua": "Rua Visconde de Guarapuava, 1700"
+    },
+    "avaliacao_media": 4.1,
+    "quantidade_feedbacks": 70,
+    "custo_medio": 110.00,
+    "parceira": false,
+    "dentistas": [
+      { "dentista_id": "8" },
+      { "dentista_id": "9" }
+    ]
+  },
+  {
+    "clinica_id": "9",
+    "nome": "Clínica Vita Odonto",
+    "especialidade_id": ["1", "4"],
+    "cnpj": "9012345691000990",
+    "dias_disponiveis": ["Terça", "Quinta", "Sábado"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["08:00", "13:00", "17:00"],
+    "localizacao": {
+      "estado": "GO",
+      "cidade": "Goiânia",
+      "bairro": "Setor Bueno",
+      "cep": "74230010",
+      "rua": "Rua 3, 520"
+    },
+    "avaliacao_media": 4.9,
+    "quantidade_feedbacks": 180,
+    "custo_medio": 105.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "10" },
+      { "dentista_id": "1" }
+    ]
+  },
+  {
+    "clinica_id": "10",
+    "nome": "Clínica SmilePlus",
+    "especialidade_id": ["3", "5"],
+    "cnpj": "0123456701000100",
+    "dias_disponiveis": ["Segunda", "Quinta", "Sábado"],
+    "turno_disponivel": ["Manhã", "Tarde"],
+    "horario_disponivel": ["09:00", "15:00", "18:00"],
+    "localizacao": {
+      "estado": "SC",
+      "cidade": "Florianópolis",
+      "bairro": "Centro",
+      "cep": "88015001",
+      "rua": "Rua Conselheiro Mafra, 800"
+    },
+    "avaliacao_media": 4.6,
+    "quantidade_feedbacks": 95,
+    "custo_medio": 115.00,
+    "parceira": true,
+    "dentistas": [
+      { "dentista_id": "2" },
+      { "dentista_id": "5" }
+    ]
+  }
+]

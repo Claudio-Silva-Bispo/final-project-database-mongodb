@@ -1,0 +1,222 @@
+[
+  {
+    "cliente_id": "1",
+    "nome": "João Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999",
+    "cpf": "12345678901",
+    "endereco_preferencia": {
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Centro",
+      "rua": "Rua das Flores",
+      "cep": "01001-000"
+    },
+    "dias_disponiveis": ["Segunda", "Quarta", "Sexta"],
+    "turno_disponivel": "Manhã",
+    "horario_disponivel": "18:00",
+    "nivel_participacao": 4,
+    "pontos_acumulados": 150,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "123456"
+  },
+  {
+    "cliente_id": "2",
+    "nome": "Maria Oliveira",
+    "email": "maria@email.com",
+    "telefone": "11988888888",
+    "cpf": "98765432100",
+    "endereco_preferencia": {
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro",
+      "bairro": "Copacabana",
+      "rua": "Av. Atlântica",
+      "cep": "22010-000"
+    },
+    "dias_disponiveis": ["Terça", "Quinta"],
+    "turno_disponivel": "Tarde",
+    "horario_disponivel": "15:30",
+    "nivel_participacao": 6,
+    "pontos_acumulados": 250,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "maria123"
+  },
+  {
+    "cliente_id": "3",
+    "nome": "Carlos Mendes",
+    "email": "carlos@email.com",
+    "telefone": "11977777777",
+    "cpf": "11122233344",
+    "endereco_preferencia": {
+      "estado": "MG",
+      "cidade": "Belo Horizonte",
+      "bairro": "Savassi",
+      "rua": "Rua Pernambuco",
+      "cep": "30130-151"
+    },
+    "dias_disponiveis": ["Segunda", "Terça"],
+    "turno_disponivel": "Noite",
+    "horario_disponivel": "19:00",
+    "nivel_participacao": 2,
+    "pontos_acumulados": 90,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "carlos456"
+  },
+  {
+    "cliente_id": "4",
+    "nome": "Fernanda Souza",
+    "email": "fernanda@email.com",
+    "telefone": "11966666666",
+    "cpf": "55566677788",
+    "endereco_preferencia": {
+      "estado": "RS",
+      "cidade": "Porto Alegre",
+      "bairro": "Moinhos de Vento",
+      "rua": "Rua Padre Chagas",
+      "cep": "90570-080"
+    },
+    "dias_disponiveis": ["Quarta", "Sexta"],
+    "turno_disponivel": "Tarde",
+    "horario_disponivel": "14:00",
+    "nivel_participacao": 3,
+    "pontos_acumulados": 120,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "fernanda789"
+  },
+  {
+    "cliente_id": "5",
+    "nome": "Lucas Pereira",
+    "email": "lucas@email.com",
+    "telefone": "11955555555",
+    "cpf": "99988877766",
+    "endereco_preferencia": {
+      "estado": "BA",
+      "cidade": "Salvador",
+      "bairro": "Barra",
+      "rua": "Av. Oceânica",
+      "cep": "40140-130"
+    },
+    "dias_disponiveis": ["Segunda", "Quinta"],
+    "turno_disponivel": "Manhã",
+    "horario_disponivel": "10:00",
+    "nivel_participacao": 1,
+    "pontos_acumulados": 45,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "lucas321"
+  },
+  {
+    "cliente_id": "6",
+    "nome": "Aline Costa",
+    "email": "aline@email.com",
+    "telefone": "11944444444",
+    "cpf": "22233344455",
+    "endereco_preferencia": {
+      "estado": "PR",
+      "cidade": "Curitiba",
+      "bairro": "Batel",
+      "rua": "Rua Vicente Machado",
+      "cep": "80420-011"
+    },
+    "dias_disponiveis": ["Terça", "Sexta"],
+    "turno_disponivel": "Noite",
+    "horario_disponivel": "20:00",
+    "nivel_participacao": 5,
+    "pontos_acumulados": 180,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "aline654"
+  },
+  {
+    "cliente_id": "7",
+    "nome": "Bruno Lima",
+    "email": "bruno@email.com",
+    "telefone": "11933333333",
+    "cpf": "33344455566",
+    "endereco_preferencia": {
+      "estado": "CE",
+      "cidade": "Fortaleza",
+      "bairro": "Aldeota",
+      "rua": "Rua Barbosa de Freitas",
+      "cep": "60175-024"
+    },
+    "dias_disponiveis": ["Quinta", "Sábado"],
+    "turno_disponivel": "Tarde",
+    "horario_disponivel": "16:00",
+    "nivel_participacao": 3,
+    "pontos_acumulados": 110,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "bruno987"
+  },
+  {
+    "cliente_id": "8",
+    "nome": "Patrícia Ramos",
+    "email": "patricia@email.com",
+    "telefone": "11922222222",
+    "cpf": "44455566677",
+    "endereco_preferencia": {
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "Boa Viagem",
+      "rua": "Rua dos Navegantes",
+      "cep": "51020-010"
+    },
+    "dias_disponiveis": ["Terça", "Quarta"],
+    "turno_disponivel": "Manhã",
+    "horario_disponivel": "09:00",
+    "nivel_participacao": 4,
+    "pontos_acumulados": 160,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "patricia456"
+  },
+  {
+    "cliente_id": "9",
+    "nome": "Rafael Torres",
+    "email": "rafael@email.com",
+    "telefone": "11911111111",
+    "cpf": "55566677788",
+    "endereco_preferencia": {
+      "estado": "DF",
+      "cidade": "Brasília",
+      "bairro": "Asa Sul",
+      "rua": "SQS 308",
+      "cep": "70351-580"
+    },
+    "dias_disponiveis": ["Segunda", "Sábado"],
+    "turno_disponivel": "Noite",
+    "horario_disponivel": "21:00",
+    "nivel_participacao": 6,
+    "pontos_acumulados": 220,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "rafael999"
+  },
+  {
+    "cliente_id": "10",
+    "nome": "Juliana Martins",
+    "email": "juliana@email.com",
+    "telefone": "11900000000",
+    "cpf": "66677788899",
+    "endereco_preferencia": {
+      "estado": "GO",
+      "cidade": "Goiânia",
+      "bairro": "Setor Bueno",
+      "rua": "Av. T-63",
+      "cep": "74230-032"
+    },
+    "dias_disponiveis": ["Quarta", "Sexta"],
+    "turno_disponivel": "Manhã",
+    "horario_disponivel": "11:00",
+    "nivel_participacao": 7,
+    "pontos_acumulados": 300,
+    "ativo": true,
+    "perfil": "Comum",
+    "senha": "juliana852"
+  }
+]

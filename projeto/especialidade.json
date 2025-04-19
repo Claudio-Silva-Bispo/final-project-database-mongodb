@@ -1,0 +1,43 @@
+[
+    {
+      "especialidade_id": "1",
+      "especialidade": "Ortodontia"
+    },
+    {
+      "especialidade_id": "2",
+      "especialidade": "Implantes"
+    },
+    {
+      "especialidade_id": "3",
+      "especialidade": "Periodontia"
+    },
+    {
+      "especialidade_id": "4",
+      "especialidade": "Cirurgia Bucomaxilofacial"
+    },
+    {
+      "especialidade_id": "5",
+      "especialidade": "Endodontia"
+    },
+    {
+      "especialidade_id": "6",
+      "especialidade": "Estética Dental"
+    },
+    {
+      "especialidade_id": "7",
+      "especialidade": "Clínico Geral"
+    },
+    {
+      "especialidade_id": "8",
+      "especialidade": "Odontopediatria"
+    },
+    {
+      "especialidade_id": "9",
+      "especialidade": "Odontologia Preventiva"
+    },
+    {
+      "especialidade_id": "10",
+      "especialidade": "Prótese Dentária"
+    }
+  ]
+  
