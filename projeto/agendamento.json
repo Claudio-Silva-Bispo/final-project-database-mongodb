@@ -1,0 +1,122 @@
+[
+    {
+        "agendamento_id": "1",
+        "cliente_id": "1",
+        "clinica_id": "1",
+        "dentista_id": "6",
+        "especialidade": "3",
+        "data": "2025-04-25",
+        "turno": "Manhã",
+        "horario": "14:00",
+        "status": "Confirmado",
+        "tipo_consulta": "Rotina de Prevenção"
+    },
+    {
+        "agendamento_id": "2",
+        "cliente_id": "2",
+        "clinica_id": "1",
+        "dentista_id": "3",
+        "especialidade": "2",
+        "data": "2025-04-26",
+        "turno": "Tarde",
+        "horario": "16:30",
+        "status": "Pendente",
+        "tipo_consulta": "Consulta Odontológica"
+    },
+    {
+        "agendamento_id": "3",
+        "cliente_id": "3",
+        "clinica_id": "2",
+        "dentista_id": "7",
+        "especialidade": "1",
+        "data": "2025-04-27",
+        "turno": "Noite",
+        "horario": "18:00",
+        "status": "Cancelado",
+        "tipo_consulta": "Limpeza"
+    },
+    {
+        "agendamento_id": "4",
+        "cliente_id": "4",
+        "clinica_id": "1",
+        "dentista_id": "5",
+        "especialidade": "3",
+        "data": "2025-04-28",
+        "turno": "Manhã",
+        "horario": "09:00",
+        "status": "Confirmado",
+        "tipo_consulta": "Tratamento de Canal"
+    },
+    {
+        "agendamento_id": "5",
+        "cliente_id": "5",
+        "clinica_id": "3",
+        "dentista_id": "4",
+        "especialidade": "2",
+        "data": "2025-04-29",
+        "turno": "Tarde",
+        "horario": "13:00",
+        "status": "Confirmado",
+        "tipo_consulta": "Consulta Odontológica"
+    },
+    {
+        "agendamento_id": "6",
+        "cliente_id": "6",
+        "clinica_id": "1",
+        "dentista_id": "2",
+        "especialidade": "1",
+        "data": "2025-04-30",
+        "turno": "Noite",
+        "horario": "20:00",
+        "status": "Pendente",
+        "tipo_consulta": "Limpeza"
+    },
+    {
+        "agendamento_id": "7",
+        "cliente_id": "7",
+        "clinica_id": "2",
+        "dentista_id": "8",
+        "especialidade": "3",
+        "data": "2025-05-01",
+        "turno": "Manhã",
+        "horario": "10:00",
+        "status": "Confirmado",
+        "tipo_consulta": "Rotina de Prevenção"
+    },
+    {
+        "agendamento_id": "8",
+        "cliente_id": "8",
+        "clinica_id": "3",
+        "dentista_id": "9",
+        "especialidade": "2",
+        "data": "2025-05-02",
+        "turno": "Tarde",
+        "horario": "15:00",
+        "status": "Cancelado",
+        "tipo_consulta": "Consulta Odontológica"
+    },
+    {
+        "agendamento_id": "9",
+        "cliente_id": "9",
+        "clinica_id": "1",
+        "dentista_id": "10",
+        "especialidade": "1",
+        "data": "2025-05-03",
+        "turno": "Manhã",
+        "horario": "11:00",
+        "status": "Confirmado",
+        "tipo_consulta": "Limpeza"
+    },
+    {
+        "agendamento_id": "10",
+        "cliente_id": "10",
+        "clinica_id": "2",
+        "dentista_id": "6",
+        "especialidade": "3",
+        "data": "2025-05-04",
+        "turno": "Tarde",
+        "horario": "14:30",
+        "status": "Pendente",
+        "tipo_consulta": "Tratamento de Canal"
+    }
+]

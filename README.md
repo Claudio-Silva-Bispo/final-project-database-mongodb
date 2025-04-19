@@ -173,7 +173,7 @@ Permite registrar que a IA sugeriu algo com base nos dados e aguarda resposta da
         "sugestao_clinica_id": "1",
         "cliente_id": "1",
         "clinica_id": "1",
-        "especialista_id": "1",
+        "dentista_id": "1",
         "especialidade_id": "1",
         "data_sugerida": "2025-04-25",
         "turno": "Manhã",
@@ -194,7 +194,7 @@ Permite controlar a resposta do cliente à sugestão feita pela clínica. Se for
         "sugestao_cliente_id": "1",
         "cliente_id": "1",
         "clinica_id": "1",
-        "especialista_id": "1",
+        "dentista_id": "1",
         "especialidade_id": "1",
         "data_sugerida": "2025-04-25",
         "turno_sugerido": "Manhã",
@@ -216,14 +216,16 @@ Armazena os agendamentos de forma eficiente. Pode ser facilmente consultado por 
 
 ```bash
     {
-        "agendamento_id": "ag_001",
-        "cliente_id": "cli_001",
-        "especialista_id": "esp_789",
+        "agendamento_id": "1",
+        "cliente_id": "1",
+        "clinica_id": "1",
+        "dentista_id": "6",
+        "especialidade": "3",
         "data": "2025-04-25",
+        "turno": "Manhã",
         "horario": "14:00",
         "status": "Confirmado",
-        "tipo_consulta": "Rotina",
-        "avaliacao_cliente": null
+        "tipo_consulta": "Rotina de Prevenção",
     }
 ```
 
@@ -235,10 +237,11 @@ Essa coleção representa a consulta oficial. Ela será vinculada ao resultado_c
 
 ```bash
     {
-        "consulta_id": "con_001",
-        "cliente_id": "cli_001",
-        "clinica_id": "cli_001",
-        "especialista_id": "esp_001",
+        "consulta_id": "1",
+        "cliente_id": "2",
+        "clinica_id": "3",
+        "dentista_id": "4",
+        "especialidade_id": "4",
         "data": "2025-04-25",
         "horario": "09:00",
         "turno": "Manhã",
@@ -247,7 +250,8 @@ Essa coleção representa a consulta oficial. Ela será vinculada ao resultado_c
         "foi_remarcada": false,
         "confirmacao_cliente": true,
         "confirmacao_clinica": true,
-        "criado_em": "2025-04-19T14:22:00Z"
+        "criado_em": "2025-04-19",
+        "feedback_id": "1"
     }
 ```
 
@@ -352,10 +356,9 @@ Armazena interações do usuário com a inteligência artificial para análise e
   }
 ```
 
-## Criar 10 documentos para cada coleção
+## Criar 10 documentos para cada Coleção
 
-Será criado a estrutura dos dados e inserir via import no terminal
+Será criada a estrutura dos dados e os documentos serão inseridos via importação no terminal.
 
-Vamos montar um arquivo .json com 10 documentos, cada um com 10 atributos, simulando dados realistas. Isso é ideal para teste e desenvolvimento. O modelo será funcional através de importação dos arquivos .json na pasta projeto. Será possível importar e clicar para consultar os dados enviados.
+Vamos elaborar um arquivo .json contendo 10 documentos, cada um com 10 atributos, simulando dados realistas. Isso servirá para testes e desenvolvimento. O modelo permitirá a importação dos arquivos .json diretamente na pasta do projeto. Após a importação, será possível consultar os dados enviados diretamente na interface.
 
-**Estrutura dos arquivos**
