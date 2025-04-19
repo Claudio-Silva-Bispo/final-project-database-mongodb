@@ -50,36 +50,41 @@ Ideal para armazenar dados de feedback, preferências personalizadas de usuário
 
 Abaixo está a modelagem dos principais documentos do sistema, estruturados de forma que aproveitem a flexibilidade do MongoDB. Cada coleção representa uma entidade essencial para o funcionamento do sistema:
 
-# 🧑 Coleção: clientes
+## 🧑 Coleção: clientes
 
 **✅ Justificativa** 
 
 A estrutura permite armazenar preferências específicas de cada cliente, como disponibilidade e localização, em um único documento. Isso é ideal para consultas rápidas baseadas em preferências.
 
 ```bash
-  {  
+  [
       {
-        "cliente_id": "cli_001",
-        "nome": "João Silva",
-        "email": "joao@email.com",
-        "telefone": "11999999999",
-        "cpf": "12345678901",
-        "endereco_preferencia": {
-          "estado": "SP",
-          "cidade": "São Paulo",
-          "bairro": "Centro"
-      },
-      {
-        "dias_disponiveis": ["Segunda", "Quarta", "Sexta"],
-        "turno_disponivel": "Manhã",
-        "nivel_participacao": 4,
-        "pontos_acumulados": 150,
-        "ativo": true
+          "cliente_id": "1",
+          "nome": "João Silva",
+          "email": "joao@email.com",
+          "telefone": "11999999999",
+          "cpf": "12345678901",
+          "endereco_preferencia": {
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Centro",
+            "rua": "Rua das Flores",
+            "cep": "01001-000"
+          },
+          "dias_disponiveis": ["Segunda", "Quarta", "Sexta"],
+          "turno_disponivel": "Manhã",
+          "horario_disponivel": "18:00",
+          "nivel_participacao": 4,
+          "pontos_acumulados": 150,
+          "ativo": true,
+          "perfil": "Comum",
+          "senha": "123456"
       }
-  }
+  ]
+
 ```
 
-# 🏥 Coleção: clinicas
+## 🏥 Coleção: clinicas
 
 **✅ Justificativa** 
 
@@ -87,37 +92,53 @@ Permite consultar clínicas com base na localidade, especialidade e avaliação.
 
 ```bash
     {
-      "clinica_id": "cli_234",
-      "nome": "Clínica OdontoMais",
-      "especialidades": ["Ortodontia", "Implante"],
-      "localizacao": {
-        "estado": "SP",
-        "cidade": "Campinas",
-        "bairro": "Taquaral"
-    },
-    {
-      "avaliacao_media": 4.8,
-      "quantidade_feedbacks": 125,
-      "custo_medio": 90.00,
-      "parceira": true
+        "clinica_id": "1",
+        "nome": "Clínica OdontoMais",
+        "especialidades": ["1", "2"],
+        "cnpj": "1234567811000150",
+        "dias_disponiveis": ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"], 
+        "turno_disponivel": ["Manhã", "Tarde"], 
+        "horario_disponivel": ["08:00", "14:00", "18:00"],
+        "localizacao": 
+        {
+            "estado": "SP",
+            "cidade": "Campinas",
+            "bairro": "Taquaral",
+            "cep": "05720333",
+            "rua": "Rua Teste, 20"
+        },
+        "avaliacao_media": 4.8,
+        "quantidade_feedbacks": 125,
+        "custo_medio": 90.00,
+        "parceira": true,
+        "dentistas": 
+        [
+            {
+            "dentista_id": "1",
+            },
+            {
+            "dentista_id": "5",
+            }
+
+        ]
     }
 ```
 
-# 🩺 Coleção: medicos ou especialistas
+## 🩺 Coleção: dentista
 
 **✅ Justificativa** 
 
-Ter os médicos em uma coleção separada permite cruzar facilmente dados como especialidade, avaliação, disponibilidade e performance (ex: total de atendimentos) — fundamentais para a IA sugerir profissionais adequados.
+Ter os dentistas em uma coleção separada permite cruzar facilmente dados como especialidade, avaliação, disponibilidade e performance (ex: total de atendimentos) — fundamentais para a IA sugerir profissionais adequados.
 
 ```bash
     {
-        "especialista_id": "esp_001",
+        "clinica_id": "1"
+        "dentista_id": "1",
         "nome": "Dra. Juliana Fernandes",
-        "especialidade": "Odontopediatria",
+        "especialidade_id": "1",
         "crm": "SP-54321",
         "email": "juliana.fernandes@clinicakids.com",
         "telefone": "(11) 99999-1234",
-        "clinica_id": "cli_001",
         "avaliacoes": 4.8,
         "total_consultas": 215,
         "disponibilidade": [
@@ -128,7 +149,7 @@ Ter os médicos em uma coleção separada permite cruzar facilmente dados como e
     }
 ```
 
-# 🧑‍⚕️ Coleção: especialidade
+## 🧑‍⚕️ Coleção: especialidade
 
 **✅ Justificativa** 
 
@@ -136,13 +157,12 @@ Conectado à clínica e com disponibilidade própria de suas especialidades, o q
 
 ```bash
     {
-        "especialista_id": "esp_789",
+        "especialidade_id": "1",
         "especialidade": "Ortodontia",
-        "clinica_id": "cli_234"
     }
 ```
 
-# 🧠 Coleção: sugestoes_para_clinica
+## 🧠 Coleção: sugestoes_para_clinica
 
 **✅ Justificativa**
 
@@ -150,19 +170,20 @@ Permite registrar que a IA sugeriu algo com base nos dados e aguarda resposta da
 
 ```bash
     {
-        "sugestao_clinica_id": "sgc_001",
-        "cliente_id": "cli_001",
-        "clinica_id": "cli_234",
-        "especialista_id": "esp_789",
+        "sugestao_clinica_id": "1",
+        "cliente_id": "1",
+        "clinica_id": "1",
+        "especialista_id": "1",
+        "especialidade_id": "1",
         "data_sugerida": "2025-04-25",
         "turno": "Manhã",
-        "motivo_sugestao": "Disponibilidade e alta avaliação",
-        "status_clinica": "Pendente",  // Pode ser "Aceita", "Recusada"
+        "motivo_sugestao": "Limpeza",
+        "status_clinica": "Pendente",
         "data_envio": "2025-04-18"
     }
 ```
 
-# 📩 Coleção: sugestoes_para_cliente
+## 📩 Coleção: sugestoes_para_cliente
 
 **✅ Justificativa** 
 
@@ -170,20 +191,24 @@ Permite controlar a resposta do cliente à sugestão feita pela clínica. Se for
 
 ```bash
     {
-        "sugestao_cliente_id": "sgt_001",
-        "cliente_id": "cli_001",
-        "clinica_id": "cli_234",
-        "especialista_id": "esp_789",
+        "sugestao_cliente_id": "1",
+        "cliente_id": "1",
+        "clinica_id": "1",
+        "especialista_id": "1",
+        "especialidade_id": "1",
         "data_sugerida": "2025-04-25",
+        "turno_sugerido": "Manhã",
         "horario_sugerido": "09:00",
-        "status_cliente": "Pendente",  // Pode ser "Aceita", "Recusada"
-        "validade": "2025-04-22T23:59:00Z",
+        "status_clinica": "Aceito", 
+        "status_cliente": "Pendente", 
+        "validade": "2025-04-22",
         "data_envio": "2025-04-18",
-        "motivo_sugestao": "Melhor custo-benefício"
+        "data_alteracao": "2025-04-21",
+        "motivo_sugestao": "Prevencao"
     }
 ```
 
-# 📅 Coleção: agendamentos
+## 📅 Coleção: agendamentos
 
 **✅ Justificativa** 
 
@@ -202,7 +227,7 @@ Armazena os agendamentos de forma eficiente. Pode ser facilmente consultado por 
     }
 ```
 
-# 📅 Coleção: consultas
+## 📅 Coleção: consultas
 
 **✅ Justificativa**
 
@@ -226,7 +251,7 @@ Essa coleção representa a consulta oficial. Ela será vinculada ao resultado_c
     }
 ```
 
-# ⭐ Coleção: feedbacks
+## ⭐ Coleção: feedbacks
 
 **✅ Justificativa** 
 
@@ -244,7 +269,7 @@ Permite gerar notas médias, análise de sentimentos e alimentar o sistema de IA
     }
 ```
 
-# 📝 Coleção: resultados_consultas
+## 📝 Coleção: resultados_consultas
 
 **✅ Justificativa** 
 
@@ -276,7 +301,7 @@ Essa estrutura é a base para decisões preditivas, como:
 ```
 
 
-# 🎁 Coleção: desafios_participacao
+## 🎁 Coleção: desafios_participacao
 
 **✅ Justificativa** 
 
@@ -292,7 +317,7 @@ Suporta o programa de relacionamento e gamificação, com tracking dos usuários
     }
 ```
 
-# 📁 Coleção: t_notificacoes_usuario
+## 📁 Coleção: t_notificacoes_usuario
 
 **✅ Justificativa** 
 
@@ -310,7 +335,7 @@ Armazena notificações direcionadas a cada usuário sobre agendamentos, feedbac
     }
 ```
 
-# 📁 Coleção: t_interacoes_ia_chatbot
+## 📁 Coleção: t_interacoes_ia_chatbot
 
 **✅ Justificativa** 
 
@@ -326,3 +351,11 @@ Armazena interações do usuário com a inteligência artificial para análise e
     contextoRelacionado: "agendamento"    // Ex: 'cadastro', 'feedback', etc. (opcional)
   }
 ```
+
+## Criar 10 documentos para cada coleção
+
+Será criado a estrutura dos dados e inserir via import no terminal
+
+Vamos montar um arquivo .json com 10 documentos, cada um com 10 atributos, simulando dados realistas. Isso é ideal para teste e desenvolvimento. O modelo será funcional através de importação dos arquivos .json na pasta projeto. Será possível importar e clicar para consultar os dados enviados.
+
+**Estrutura dos arquivos**
